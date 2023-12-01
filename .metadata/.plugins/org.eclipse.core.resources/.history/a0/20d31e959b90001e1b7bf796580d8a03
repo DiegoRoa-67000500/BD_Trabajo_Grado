@@ -1,0 +1,7 @@
+package trabajo.grado.repository;
+
+
+@Repository
+public interface RepoPasajeros extends JpaRepository<ModeloPasajeros, Long>{
+
+}

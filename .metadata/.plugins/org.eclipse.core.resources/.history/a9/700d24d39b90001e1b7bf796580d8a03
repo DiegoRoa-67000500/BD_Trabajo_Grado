@@ -1,0 +1,15 @@
+package trabajo.grado.service;
+
+public interface ServicioPasajeros {
+	
+	List<ModeloPasajeros> getPasajeros();
+	
+	ModeloPasajeros guardarPasajeros(ModeloPasajeros pasajeros);
+	
+	ModeloPasajeros getUnicoPasajeros(Long id);
+	
+	void borrarPasajeros(Long id);
+	
+	ModeloPasajeros actualizarPasajeros(ModeloPasajeros pasajeros);
+
+}
