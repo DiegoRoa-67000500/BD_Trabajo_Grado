@@ -25,6 +25,23 @@ public class ModeloDestinos {
 	
 	@Column(name="lista_destinos")
 	private String lista_destinos;
+
+	public Long getDestino_id() {
+		return destino_id;
+	}
+
+	public void setDestino_id(Long destino_id) {
+		this.destino_id = destino_id;
+	}
+
+	public String getLista_destinos() {
+		return lista_destinos;
+	}
+
+	public void setLista_destinos(String lista_destinos) {
+		this.lista_destinos = lista_destinos;
+	}
+	
 	
 	
 

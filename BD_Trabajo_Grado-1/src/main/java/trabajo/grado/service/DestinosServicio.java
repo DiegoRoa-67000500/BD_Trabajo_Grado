@@ -15,17 +15,14 @@ public class DestinosServicio {
 	@Autowired
 	private RepoDestinos eRepository;
 	
-	@Override
 	public List<ModeloDestinos> getDestinos(){
 		return eRepository.findAll();
 	}
 
-	@Override
 	public ModeloDestinos guardarDestino(ModeloDestinos destino) {
 		return eRepository.save(destino);
 	}
 		
-	@Override
 	public ModeloDestinos getUnicoDestino(Long id) {
 		Optional<ModeloDestinos> destino = eRepository.findById(id);
 		if(destino.isPresent()) {
@@ -34,12 +31,10 @@ public class DestinosServicio {
 		throw new RuntimeException("Destino no encontrado para ID "+id);
 	}
 	
-	@Override
 	public void borrarDestino(Long id) {
 		eRepository.deleteById(id);
 	}
 	
-	@Override
 	public ModeloDestinos actualizarDestino(ModeloDestinos destino) {
 		return eRepository.save(destino);
 	}

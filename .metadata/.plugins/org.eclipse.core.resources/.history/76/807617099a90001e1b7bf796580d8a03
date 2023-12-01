@@ -1,0 +1,13 @@
+package trabajo.grado.controller;
+
+
+@RestController
+public class ControladorContacto {
+
+	private ServicioContacto eService;
+	
+	@GetMapping("/contactos")
+	public List<ModeloContacto> getContactos(){
+		return eService.getDestinos()
+	}
+}

@@ -38,7 +38,7 @@ public class ControladorDestinos {
 	public ModeloDestinos actualizarDestino(@PathVariable Long id, @RequestBody ModeloDestinos destino)
 	{
 		destino.setDestino_id(id);
-		return eService.guardarDestino(destino);
+		return eService.guardarDestinos(destino);
 	}
 	
 	@DeleteMapping("/destinos")
