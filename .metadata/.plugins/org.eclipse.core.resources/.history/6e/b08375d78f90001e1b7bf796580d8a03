@@ -1,0 +1,5 @@
+package trabajo.grado.repository;
+
+public interface RepoDestinos {
+
+}
