@@ -24,7 +24,7 @@ public class ControladorDestinos {
 		return eService.getDestinos();
 	}
 	
-	@GetMapping("destinos/{id]")
+	@GetMapping("destinos/{id}")
 	public ModeloDestinos getUnicoDestino(@PathVariable("id") Long id) {
 		return eService.getUnicoDestino(id);
 	}
